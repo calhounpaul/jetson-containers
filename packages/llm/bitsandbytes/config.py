@@ -10,7 +10,7 @@ def bitsandbytes(version, requires=None, default=False):
     
     pkg['build_args'] = {
         'BITSANDBYTES_VERSION': version,
-        'BITSANDBYTES_REPO': "dusty-nv/bitsandbytes",
+        'BITSANDBYTES_REPO': "calhounpaul/bitsandbytes_jetsonX",
         'BITSANDBYTES_BRANCH': "main",
         'CUDA_INSTALLED_VERSION': int(str(CUDA_VERSION.major) + str(CUDA_VERSION.minor)),
         'CUDA_MAKE_LIB': f"cuda{str(CUDA_VERSION.major)}x"
